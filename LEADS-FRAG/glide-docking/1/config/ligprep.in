@@ -1,0 +1,14 @@
+# No script needs to be run before this.
+# 
+# Run with
+#   "${SCHRODINGER}/ligprep" -WAIT -inp ligprep-ligand.in -HOST ${HOST} -NJOBS 1 -TMPLAUNCHDIR -ATTACHED
+# -WAIT: Do not return a prompt until the job completes.
+
+INPUT_FILE_NAME
+OUT_MAE   ligprep-ligand-out.mae
+FORCE_FIELD   16
+PH_THRESHOLD   0.0
+EPIK   yes
+DETERMINE_CHIRALITIES   no
+IGNORE_CHIRALITIES   no
+NUM_STEREOISOMERS   1

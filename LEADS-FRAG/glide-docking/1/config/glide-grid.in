@@ -1,0 +1,12 @@
+# No script needs to be run before this.
+# 
+# Run with
+#   "${SCHRODINGER}/glide" glide-grid.in -WAIT -OVERWRITE -HOST ${HOST} -TMPLAUNCHDIR -ATTACHED
+# -WAIT: Do not return a prompt until the job completes.
+# -OVERWRITE: Remove previous job files before running.
+
+GRID_CENTER   66.6886882692308, 14.268924192307692, 24.94476592307692
+GRIDFILE   glide-grid.zip
+INNERBOX   10, 10, 10
+OUTERBOX  30.0, 30.0, 30.0
+RECEP_FILE   ../prepwizard/prepwizard-out.mae
