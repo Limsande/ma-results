@@ -1,0 +1,66 @@
+
+====================================
+            Glide Script            
+====================================
+
+--------------------------------------------------------------------------------
+JobId          : eros-0-60c9fc3b
+Name           : glide-dock
+Program        : Glide
+MMshareExec    : /prog/schrodinger/2019u1/mmshare-v4.5/bin/Linux-x86_64
+Host           : eros
+Dir            : /mnt/data/praktikum03/WORK/Luis/Masterarbeit/Daten/LEADS-FRAG/ci0c00693_si_002/1TUV/glide-dock
+HostEntry      : zeus
+Queue          : SGE
+JobHost        : gaia
+JobDir         : /tmp/praktikum03/glide-dock
+JobMMshareExec : /prog/schrodinger/2019u1-new/mmshare-v4.5/bin/Linux-x86_64
+Commandline    : /prog/schrodinger/2019u1/glide /mnt/data/praktikum03/WORK/Luis/Masterarbeit/Daten/LEADS-FRAG/ci0c00693_si_002/1TUV/glide-dock/glide-dock.in_edited -WAIT -OVERWRITE -adjust -TMPLAUNCHDIR -ATTACHED -HOST zeus
+StartTime      : 2021-06-16-15:27:24
+--------------------------------------------------------------------------------
+
+Running locally: False
+Max retries: 2
+Input file: /mnt/data/praktikum03/WORK/Luis/Masterarbeit/Daten/LEADS-FRAG/ci0c00693_si_002/1TUV/glide-dock/glide-dock.in_edited
+
+Setting up docking job
+Separating ligands...
+Number of structures that are to be docked: 1
+Setting up Glide docking jobs...
+
+Running subjobs on hosts:
+  zeus (Max: 46)
+Number of jobs:       1
+Max retries per job:  2
+Max allowed failures: unlimited
+Run with -LOCAL:      False
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: True
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+0 1 0 | launched  gaia-0-60c9fc40 glide-dock-0001 localhost [gaia]
+1 0 0 | finished  gaia-0-60c9fc40 glide-dock-0001 localhost [gaia]
+
+All jobs have completed.
+
+1 of 1 job(s) succeeded; 0 job(s) failed.
+
+All jobs succeeded: 1 ligands done.
+Writing poses to glide-dock_pv.maegz
+Combining log files to glide-dock_subjobs.log
+Archiving subjob pose files in glide-dock_subjob_poses.zip
+Archiving subjob input and log files in glide-dock_subjobs.tar.gz
+Cleaning up...
+
+All Glide docking subjobs: Total CPU time = 4 seconds
+
+Finished at: Wed Jun 16 15:27:36 2021
+Total elapsed time for Glide script = 10 seconds

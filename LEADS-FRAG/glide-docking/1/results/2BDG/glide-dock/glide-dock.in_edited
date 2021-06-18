@@ -1,0 +1,15 @@
+# Both ligand preparation and receptor grid generation
+# must be run before this.
+#
+# Run with
+#   "${SCHRODINGER}/glide" glide-dock.in -WAIT -OVERWRITE -adjust -HOST ${HOST} -TMPLAUNCHDIR -ATTACHED
+# -WAIT: Do not return a prompt until the job completes.
+# -OVERWRITE: Remove previous job files before running.
+
+CORE_DEFINITION   allheavy
+GRIDFILE /mnt/data/praktikum03/WORK/Luis/Masterarbeit/Daten/LEADS-FRAG/ci0c00693_si_002/2BDG/glide-grid/glide-grid.zip
+LIGANDFILE /mnt/data/praktikum03/WORK/Luis/Masterarbeit/Daten/LEADS-FRAG/ci0c00693_si_002/2BDG/ligprep/ligprep-ligand-out.mae
+PRECISION   SP
+REF_LIGAND_FILE /mnt/data/praktikum03/WORK/Luis/Masterarbeit/Daten/LEADS-FRAG/ci0c00693_si_002/2BDG/prepwiz-refligand/prepwiz-refligand-out.mae
+USE_REF_LIGAND   True
+POSES_PER_LIG 3
